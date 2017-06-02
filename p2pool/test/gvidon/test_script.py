@@ -1,6 +1,6 @@
 import unittest
 
-from p2pool.dash import script
+from p2pool.gvidon import script
 
 class Test(unittest.TestCase):
     def test_all(self):

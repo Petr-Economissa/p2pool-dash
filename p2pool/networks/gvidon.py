@@ -1,6 +1,6 @@
-from p2pool.dash import networks
+from p2pool.gvidon import networks
 
-PARENT = networks.nets['dash']
+PARENT = networks.nets['gvidon']
 SHARE_PERIOD = 20 # seconds
 CHAIN_LENGTH = 24*60*60//20 # shares
 REAL_CHAIN_LENGTH = 24*60*60//20 # shares
@@ -14,6 +14,6 @@ MIN_TARGET = 0
 MAX_TARGET = 2**256//2**20 - 1
 PERSIST = True
 WORKER_PORT = 7903
-BOOTSTRAP_ADDRS = 'dash01.p2poolmining.us p2pool.2sar.ru dash02.p2poolmining.us p2pool.dash.siampm.com dash03.p2poolmining.us crypto.office-on-the.net dash04.p2poolmining.us'.split(' ')
-ANNOUNCE_CHANNEL = '#p2pool-dash'
+BOOTSTRAP_ADDRS = 'gvidon01.p2poolmining.us p2pool.2sar.ru gvidon02.p2poolmining.us p2pool.gvidon.siampm.com gvidon03.p2poolmining.us crypto.office-on-the.net gvidon04.p2poolmining.us'.split(' ')
+ANNOUNCE_CHANNEL = '#p2pool-gvidon'
 VERSION_CHECK = lambda v: v >= 120100
